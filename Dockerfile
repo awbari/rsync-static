@@ -1,8 +1,5 @@
 FROM debian
 
-ARG RSYNC_VERSION=3.4.1
-ENV RSYNC_VERSION=${RSYNC_VERSION}
-
 RUN apt update && \
   apt install -y gcc wget libssl-dev libxxhash-dev libzstd-dev \
   liblz4-dev build-essential libpopt-dev zlib1g-dev jq curl
