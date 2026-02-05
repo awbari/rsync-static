@@ -1,0 +1,7 @@
+services:
+  build:
+    build: .
+    # environment: 
+    #   RSYNC_VERSION: '3.4.1'
+    volumes:
+      - ./build:/build
